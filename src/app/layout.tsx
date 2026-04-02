@@ -6,6 +6,8 @@ import { Geist, Geist_Mono } from "next/font/google"
 import { cn } from "@/lib/utils"
 import { siteConfig } from "@/lib/config"
 
+import { Toaster } from "@/components/ui/sonner"
+
 import "@/styles/globals.css"
 
 const fontGeistSans = Geist({
@@ -56,6 +58,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
         )}
       >
         {children}
+        <Toaster />
       </body>
     </html>
   )

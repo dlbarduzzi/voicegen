@@ -8,11 +8,6 @@ export default function Page() {
       </div>
       <div className="mt-4 flex flex-wrap gap-3">
         <Button variant="default">Button</Button>
-        <Button variant="destructive">Button</Button>
-        <Button variant="ghost">Button</Button>
-        <Button variant="link">Button</Button>
-        <Button variant="outline">Button</Button>
-        <Button variant="secondary">Button</Button>
       </div>
     </div>
   )
