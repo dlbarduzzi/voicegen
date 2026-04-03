@@ -1,5 +1,3 @@
-import "dotenv/config"
-
 import { env } from "./src/lib/env/server"
 import { defineConfig } from "prisma/config"
 

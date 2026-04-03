@@ -38,7 +38,6 @@
     "@types/pg": "^8.20.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "dotenv": "^17.4.0",
     "eslint": "^9.39.4",
     "eslint-config-next": "16.2.2",
     "eslint-plugin-format": "^2.0.1",
