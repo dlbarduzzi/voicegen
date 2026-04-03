@@ -47,3 +47,6 @@ next-env.d.ts
 !.vscode/settings.json
 .local/
 coverage/
+
+# clerk configuration (can include secrets)
+/.clerk/

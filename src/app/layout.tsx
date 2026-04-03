@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils"
 import { siteConfig } from "@/lib/config"
 
 import { Toaster } from "@/components/ui/sonner"
+import { ClerkProvider } from "@clerk/nextjs"
 
 import "@/styles/globals.css"
 
@@ -51,14 +52,16 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
       <head />
       <body
         className={cn(
-          "font-sans text-base bg-white text-zinc-900",
+          "font-sans text-base bg-background text-foreground",
           "selection:bg-yellow-200 selection:text-zinc-900",
           fontGeistSans.variable,
           fontGeistMono.variable,
         )}
       >
-        {children}
-        <Toaster />
+        <ClerkProvider>
+          {children}
+          <Toaster />
+        </ClerkProvider>
       </body>
     </html>
   )
