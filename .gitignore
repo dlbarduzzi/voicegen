@@ -50,3 +50,6 @@ coverage/
 
 # clerk configuration (can include secrets)
 /.clerk/
+
+# prisma
+src/prisma/generated/
